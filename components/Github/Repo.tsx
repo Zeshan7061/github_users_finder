@@ -1,6 +1,5 @@
 import { FaLink, FaEye, FaStar, FaInfo, FaUtensils } from 'react-icons/fa'
-import { IRepo } from './UserItem'
-
+import { IRepo } from './ReposList'
 interface Props {
 	repo: IRepo
 }
@@ -27,7 +26,7 @@ const Repo = ({ repo }: Props) => {
 							<FaInfo />
 							<span>{repo.open_issues}</span>
 						</span>
-						<span className='repo_tag text-yellow-700 bg-yellow-200'>
+						<span className='text-yellow-700 bg-yellow-200'>
 							<FaUtensils />
 							<span>{repo.forks}</span>
 						</span>
